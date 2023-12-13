@@ -231,4 +231,5 @@ public class ConfigSessionHandler implements MinecraftSessionHandler {
   public enum State {
     START, NEGOTIATING, PLUGIN_MESSAGE_INTERRUPT, RESOURCE_PACK_INTERRUPT, COMPLETE
   }
+
 }
