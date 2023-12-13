@@ -63,7 +63,7 @@ public class ConfigSessionHandler implements MinecraftSessionHandler {
 
   private ResourcePackInfo resourcePackToApply;
 
-  private State state;
+  private final State state;
 
   /**
    * Creates the new transition handler.
@@ -228,7 +228,7 @@ public class ConfigSessionHandler implements MinecraftSessionHandler {
   /**
    * Represents the state of the configuration stage.
    */
-  public static enum State {
+  public enum State {
     START, NEGOTIATING, PLUGIN_MESSAGE_INTERRUPT, RESOURCE_PACK_INTERRUPT, COMPLETE
   }
 }

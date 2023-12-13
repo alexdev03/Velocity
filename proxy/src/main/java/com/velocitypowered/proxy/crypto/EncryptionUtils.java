@@ -60,8 +60,8 @@ public enum EncryptionUtils {
   public static final QuietDecoderException PREVIEW_SIGNATURE_MISSING
       = new QuietDecoderException("Unsigned chat message requested signed preview");
   public static final byte[] EMPTY = new byte[0];
-  private static PublicKey YGGDRASIL_SESSION_KEY;
-  private static KeyFactory RSA_KEY_FACTORY;
+  private static final PublicKey YGGDRASIL_SESSION_KEY;
+  private static final KeyFactory RSA_KEY_FACTORY;
 
   private static final Base64.Encoder MIME_SPECIAL_ENCODER
       = Base64.getMimeEncoder(76, "\n".getBytes(StandardCharsets.UTF_8));

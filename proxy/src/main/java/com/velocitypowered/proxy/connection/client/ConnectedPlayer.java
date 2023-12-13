@@ -163,7 +163,7 @@ public class ConnectedPlayer implements MinecraftConnectionAssociation, Player, 
           .withStatic(FacetPointers.TYPE, Type.PLAYER).build();
   private @Nullable String clientBrand;
   private @Nullable Locale effectiveLocale;
-  private @Nullable IdentifiedKey playerKey;
+  private final @Nullable IdentifiedKey playerKey;
   private @Nullable ClientSettings clientSettingsPacket;
   private final ChatQueue chatQueue;
   private final ChatBuilderFactory chatBuilderFactory;

@@ -89,7 +89,7 @@ public interface ResultedEvent<R extends ResultedEvent.Result> {
     private final boolean status;
     private final @Nullable Component reason;
 
-    protected ComponentResult(boolean status, @Nullable Component reason) {
+    private ComponentResult(boolean status, @Nullable Component reason) {
       this.status = status;
       this.reason = reason;
     }

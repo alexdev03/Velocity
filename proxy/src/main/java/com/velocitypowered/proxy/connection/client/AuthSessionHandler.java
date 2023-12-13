@@ -263,7 +263,7 @@ public class AuthSessionHandler implements MinecraftSessionHandler {
     this.inbound.cleanup();
   }
 
-  static enum State {
+  enum State {
     START, SUCCESS_SENT, ACKNOWLEDGED
   }
 }

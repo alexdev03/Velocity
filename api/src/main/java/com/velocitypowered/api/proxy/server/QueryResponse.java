@@ -237,8 +237,8 @@ public final class QueryResponse {
     private int maxPlayers;
     private int proxyPort;
 
-    private List<String> players = new ArrayList<>();
-    private List<PluginInformation> plugins = new ArrayList<>();
+    private final List<String> players = new ArrayList<>();
+    private final List<PluginInformation> plugins = new ArrayList<>();
 
     private Builder() {
     }

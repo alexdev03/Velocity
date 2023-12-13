@@ -80,7 +80,7 @@ public final class CommandExecuteEvent implements ResultedEvent<CommandResult> {
     private static final CommandResult DENIED = new CommandResult(false, false, null);
     private static final CommandResult FORWARD_TO_SERVER = new CommandResult(false, true, null);
 
-    private @Nullable String command;
+    private final @Nullable String command;
     private final boolean status;
     private final boolean forward;
 

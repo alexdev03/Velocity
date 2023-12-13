@@ -25,8 +25,8 @@ import java.util.BitSet;
 public class LastSeenMessages {
 
   private static final int DIV_FLOOR = -Math.floorDiv(-20, 8);
-  private int offset;
-  private BitSet acknowledged;
+  private final int offset;
+  private final BitSet acknowledged;
 
   public LastSeenMessages() {
     this.offset = 0;
